@@ -54,3 +54,15 @@ If you want to learn more about building native executables, please consult http
 Easily start your Reactive RESTful Web Services
 
 [Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+
+### Step-1
+We have created one package response.
+We have created a model class peanut where we have added the respective paramenters.
+
+### Step-2
+We haver created a client interface to access the endpoints.
+
+### Step-3
+We have created a client class which implemets the client interface. 
+We have created the object of model class.
+Here we have created getPeanutById method where we are set the values of respective parameter and restrning the object.
