@@ -31,20 +31,32 @@ public class PeanutsClientSimpleHttp implements PeanutsClient {
 		Peanut p = new Peanut();
 		List<String> groupList = new ArrayList<>();
 		List<String> RolesList = new ArrayList<>();
-		groupList.add("IT");  
-		RolesList.add("Software Developer");
-		p.setUsername("Admin");
-		p.setFirstName("Preeti");
-		p.setLastName("Vishnoi");
-		p.setEmail("preeti@gmail.com");
-		p.setBirthday("1");
-		p.setGender("female");
+		groupList.add("peanuts");
+		RolesList.add("child");
+		p.setUsername("charlie");
+		p.setFirstName("Charlie");
+		p.setLastName("Brown");
+		p.setEmail("charlie.brown@peanuts.com");
+		p.setBirthday("1948-05-30");
+		p.setGender("male");
 		p.setGroups(groupList);
 		p.setRoles(RolesList);
 
 		return p;
+
 	}
 
+	@Override
+	public CredentialData getCredentialData(String id) {
+		CredentialData p = new CredentialData();
+		p.setValue("/bVkHA4G/VOskjaCgNYyTz1BhgD+9X8bxCNEPGGpnDCJbWHDXIW0G8IlSBhDdJsXTjrXt/7yQguBwJ3sxSmSKA==");
+		p.setSalt("lZtleWv1DeEcNIr8MTzdeg==");
+		p.setAlgorithm("pbkdf2-sha256");
+		p.setIterations(27500);
+		p.setType("password");
+
+		return p;
+	}
 
 
 }

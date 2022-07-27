@@ -24,4 +24,8 @@ public interface PeanutsClient {
 	@Path("/{id}")
 	Peanut getPeanutById(@PathParam("id") String id);
 
+	@GET
+	@Path("/{id}/credentials")
+	CredentialData getCredentialData(@PathParam("id") String id);
+
 }
