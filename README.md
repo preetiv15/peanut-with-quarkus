@@ -54,3 +54,14 @@ If you want to learn more about building native executables, please consult http
 Easily start your Reactive RESTful Web Services
 
 [Related guide section...](https://quarkus.io/guides/getting-started-reactive#reactive-jax-rs-resources)
+
+### Step-1
+We have created one model class Peanut. Where we are adding the various parameters.
+We have used Lombok for auto generation of getters and settters.
+
+### Step-2
+We have created one client class where we have created one method getPeanutById. 
+In this method we are setting the value of parameters with the help of object.
+
+### Step-3
+We have created one client interface and here we are declaring the endpoints for each requests.
